@@ -10,7 +10,7 @@ Pod::Spec.new do |s|
   s.license      = "MIT"
   s.author       = { "Daniel Lin" => "linzhdk@gmail.com" }
   s.platform     = :ios, "7.0"
-  s.source       = { :git => "http://git.jzg01.com/dlnframework/dlncore.git" }
+  s.source       = { :git => "http://git.jzg01.com/dlnframework/dlncore.git", :tag => s.version }
   s.source_files = "DLNCore/**/*.{h,m}"
   s.requires_arc = true
   #s.xcconfig = { "CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES" => "YES" }
