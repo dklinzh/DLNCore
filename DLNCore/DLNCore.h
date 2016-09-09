@@ -8,13 +8,13 @@
 
 #import <UIKit/UIKit.h>
 #import <Foundation/Foundation.h>
-#import <DLNCore/DLNAppInfo.h>
-#import <DLNCore/DLNUUIDTool.h>
-#import <DLNCore/AESCrypt.h>
-#import <DLNCore/NSData+Base64.h>
-#import <DLNCore/NSString+Base64.h>
-#import <DLNCore/NSString+DLNMD5.h>
-#import <DLNCore/NSString+DLNSHA.h>
+#import "DLNAppInfo.h"
+#import "DLNUUIDTool.h"
+#import "AESCrypt.h"
+#import "NSData+Base64.h"
+#import "NSString+Base64.h"
+#import "NSString+DLNMD5.h"
+#import "NSString+DLNSHA.h"
 
 //! Project version number for DLNCore.
 FOUNDATION_EXPORT double DLNCoreVersionNumber;
