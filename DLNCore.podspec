@@ -6,11 +6,11 @@ Pod::Spec.new do |s|
   s.description  = <<-DESC
                    It is a core part of the 'DLN' frameworks.
                    DESC
-  s.homepage     = "http://git.jzg01.com/pods/DLNCore"
+  s.homepage     = "https://github.com/dklinzh/DLNCore"
   s.license      = "MIT"
   s.author       = { "Daniel Lin" => "linzhdk@gmail.com" }
   s.ios.deployment_target = '7.0'
-  s.source       = { :git => "http://git.jzg01.com/pods/DLNCore.git", :tag => s.version.to_s }
+  s.source       = { :git => "https://github.com/dklinzh/DLNCore.git", :tag => s.version.to_s }
   s.source_files = "DLNCore/**/*.{h,m}"
   s.private_header_files = 'DLNCore/Code/NSData+CommonCrypto.h'
   s.requires_arc = true
