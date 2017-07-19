@@ -29,7 +29,7 @@
  *  Add a property of basic type, e.g. int, float, BOOL, CGRect etc.
  *
  *  @param name property name
- *  @param type encodingType of property. e.g. @encode(int)
+ *  @param type encodingType of property. e.g. @‎encode(int)
  */
 + (void)dln_addBasicProperty:(NSString *)name encodingType:(char *)type;
 @end
