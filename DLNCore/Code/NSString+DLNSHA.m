@@ -12,8 +12,7 @@
 @implementation NSString (DLNSHA)
 
 - (NSString *)dln_SHA1 {
-    const char *cstr = [self cStringUsingEncoding:NSUTF8StringEncoding];
-    NSData *data = [NSData dataWithBytes:cstr length:self.length];
+    NSData *data = [self dataUsingEncoding:NSUTF8StringEncoding];
     uint8_t digest[CC_SHA1_DIGEST_LENGTH];
     
     CC_SHA1(data.bytes, (CC_LONG)data.length, digest);
@@ -28,8 +27,7 @@
 }
 
 - (NSString *)dln_SHA224 {
-    const char *cstr = [self cStringUsingEncoding:NSUTF8StringEncoding];
-    NSData *data = [NSData dataWithBytes:cstr length:self.length];
+    NSData *data = [self dataUsingEncoding:NSUTF8StringEncoding];
     uint8_t digest[CC_SHA224_DIGEST_LENGTH];
     
     CC_SHA224(data.bytes, (CC_LONG)data.length, digest);
@@ -43,8 +41,7 @@
 }
 
 - (NSString *)dln_SHA256 {
-    const char *cstr = [self cStringUsingEncoding:NSUTF8StringEncoding];
-    NSData *data = [NSData dataWithBytes:cstr length:self.length];
+    NSData *data = [self dataUsingEncoding:NSUTF8StringEncoding];
     uint8_t digest[CC_SHA256_DIGEST_LENGTH];
     
     CC_SHA256(data.bytes, (CC_LONG)data.length, digest);
@@ -59,8 +56,7 @@
 }
 
 - (NSString *)dln_SHA384 {
-    const char *cstr = [self cStringUsingEncoding:NSUTF8StringEncoding];
-    NSData *data = [NSData dataWithBytes:cstr length:self.length];
+    NSData *data = [self dataUsingEncoding:NSUTF8StringEncoding];
     uint8_t digest[CC_SHA384_DIGEST_LENGTH];
     
     CC_SHA384(data.bytes, (CC_LONG)data.length, digest);
@@ -75,8 +71,7 @@
 }
 
 - (NSString *)dln_SHA512 {
-    const char *cstr = [self cStringUsingEncoding:NSUTF8StringEncoding];
-    NSData *data = [NSData dataWithBytes:cstr length:self.length];
+    NSData *data = [self dataUsingEncoding:NSUTF8StringEncoding];
     uint8_t digest[CC_SHA512_DIGEST_LENGTH];
     
     CC_SHA512(data.bytes, (CC_LONG)data.length, digest);
